@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c7c5c9;
+}
+img {
+  width: 15em;
+}
+
+.container {
+  margin: 0.5em auto;
+  padding: 1em;
+  width: 90%;
+
+  background: linear-gradient(#a1c4fd, #c2e9fb);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  font-family: Pattaya, monospace;
+  font-size: 5rem;
+  color: palevioletred;
+}
+
+.inner-div {
+  background-color: wheat;
+  margin: 1em 1em;
+  border: 0.2em solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+p {
+  text-align: center;
+  font-family: Pattaya, monospace;
+  font-size: 1.4rem;
+}
+.inner-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em 0;
+}
+h3 {
+  text-align: center;
+  font-family: Pattaya, monospace;
+}
+
+.inner-score-div {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.inner-div:hover {
+  border: 0.2em solid blueviolet;
+}
+
+.disabled-button {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+@media (max-width: 879px) {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}

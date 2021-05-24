@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Rock Paper and Scissors</h1>
+        <p>If player wins. A point is given to them</p>
+        <p>IF a computer wins. A point is given to it</p>
+        <p>If it results in draw a point is given to both</p>
         <div class="inner-container">
-            <div>
-
+            <div class="inner-div" id="rocks">
+             <img src="./images/rocks.jpg" alt="rock-pic">
+             <p>Rocks</p>
             </div>
-            <div>
-
+            <div class="inner-div" id="paper">
+             <img src="./images/paper.jpg" alt="paper-pic">
+             <p>Paper</p>
             </div>
-            <div>
-                
+            <div class="inner-div" id="scissors">
+             <img src="./images/scissors.jpg" alt="scissors-pic">
+             <p>Scissors</p>
             </div>
         </div>
+
+        <div class="score-container">
+            <h3>Here are the scores</h3>
+            <div class="inner-score-div">
+                <div id = "player-div"> 
+                <p>Player</p>
+                <span id="player-span">0</span>
+                </div>
+                <div id="comp-div"> 
+                    <p>Computer</p>
+                    <span id="computer-span">0</span>
+                </div>
+            </div>
+            <p id="comment-p"></p>
+        </div>
     </div>
+    <script src="./app.js"></script>
 </body>
+ 
 </html>
