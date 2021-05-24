@@ -65,6 +65,7 @@ function rstgame(){
       compText.innerHTML = CompCont;
       playText.innerHTML = PlayerCont;
        commText.innerHTML = "Lets play the game again"
+       objDesc.innerHTML = "What player and computer chooses will be shown here"
         for(let j = 0; j < indiv.length;j++){
             indiv[j].classList.remove("disabled-button");
         }
