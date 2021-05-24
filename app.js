@@ -4,6 +4,7 @@ const compText = document.body.querySelector("#computer-span")
 const commText = document.body.querySelector("#comment-p")
 console.log(typeof(compText));
 const contain = document.body.querySelector(".container")
+const objDesc = document.body.querySelector(".obj-desc");
 let i = 0;
 let val;
 indiv.forEach((e)=>{
@@ -34,6 +35,8 @@ function decider(userinput,computerinput){
       CompCont++;
       compText.innerHTML = CompCont;
       playText.innerHTML = PlayerCont;
+      objDesc.innerHTML = `Both the player and computer has chosen ${userinput}`;
+
        
     }
     else if((userinput == "rocks" && computerinput == "paper") || (userinput == "scissors" && computerinput == "rocks") || (userinput == "paper" && computerinput == "scissors") ){
@@ -41,6 +44,7 @@ function decider(userinput,computerinput){
         CompCont++
          compText.innerHTML = CompCont;
       playText.innerHTML = PlayerCont;
+      objDesc.innerHTML = `Player has chosen ${userinput} and computer has chosen ${computerinput}` 
         
           
     }
@@ -49,6 +53,7 @@ function decider(userinput,computerinput){
         PlayerCont++;
              compText.innerHTML = CompCont;
       playText.innerHTML = PlayerCont;
+        objDesc.innerHTML = `Player has chosen ${userinput} and computer has chosen ${computerinput}`
     }
     ;
 }
